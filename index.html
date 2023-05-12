@@ -21,6 +21,8 @@
 <script>
 
   function testButton(){
+    document.getElementById("title").style.color="pink";
+    document.getElementById("title").innerHTML = "Facts about dolphins";
     const facts = [
           "There are currently 42 species of dolphins and seven species of porpoises.",
           "Dolphins are marine mammals. They must surface to breathe air and give birth to live young.",
@@ -29,11 +31,13 @@
           "All dolphins have conical-shaped teeth. A Risso's dolphin has 14 while a spinner dolphin can have 240.",
         ];
         const colors = ["red","blue","yellow","brown","pink"];
+        const fontSize=["12px", "14px", "20px", "24px", "30px"];
     let elements = document.getElementsByClassName("title2");
         for (i = 0; i < elements.length; i++) {
           elements[i].style.border = "3px solid red";
           elements[i].style.color =colors[i];
           elements[i].innerHTML=facts[i];
+          elements[i].style.fontSize=fontSize[i]
   }
 }
 </script>
